@@ -6,20 +6,26 @@ Nodejs + Koa.js + koa-router + sequelize
 
 ## Instructions
 
-Local Development
+### Local Development
 
 ```
 npm i
 npm run serve
 ```
 
-Production build/serve
+### Production build/serve
 
 ```
 # Production build
 npm run build
 # Start in production mode
 npm run start
+```
+
+### Testing
+
+```
+npm run test
 ```
 
 ## Endpoints
