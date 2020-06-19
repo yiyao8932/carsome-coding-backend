@@ -7,7 +7,7 @@ export const getBookings = async () => {
     try {
         return await Booking.findAll({ raw: true });
     } catch (error) {
-        throw new Error("Failed to generate list of time");
+        throw new Error("Failed to get bookings");
     }
 }
 
@@ -15,5 +15,9 @@ export const getBookings = async () => {
     Add new booking
 */
 export const placeBooking = (body) => {
-    return Booking.create(body);
+    try {
+        return Booking.create(body);
+    } catch (error) {
+        throw new Error("Failed to place booking");
+    }
 }

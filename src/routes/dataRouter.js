@@ -1,5 +1,5 @@
 import Router from 'koa-router';
-import { getBookings, placeBooking } from '../controller/listController';
+import { getBookings, placeBooking } from '../controller/bookingController';
 
 const router = new Router();
 
