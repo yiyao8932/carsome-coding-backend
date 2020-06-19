@@ -1,5 +1,4 @@
 import Booking from '../models/booking';
-import { generateTimeListService } from '../services/generateTimeListService';
 
 /*
     A controller for calculating available time slots and remove any unavailable time slots
