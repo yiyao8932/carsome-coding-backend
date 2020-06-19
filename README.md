@@ -1,7 +1,5 @@
 # Coding Challenge for Carsome (Backend)
 
-Deployed Link: 
-
 ## Tech Stack
 
 Nodejs + Koa.js + koa-router + sequelize
@@ -10,16 +8,28 @@ Nodejs + Koa.js + koa-router + sequelize
 
 Local Development
 
-```shell
+```
 npm i
-npm start
+npm run serve
 ```
 
 Production build/serve
 
-```Shell
+```
 # Production build
 npm run build
 # Start in production mode
-npm run prod
+npm run start
+```
+
+## Endpoints
+
+GET /bookings - to get all the bookings.
+
+POST /place-booking - to place a booking. Takes an object that has "time" key to process.
+
+```
+{
+    "time": "2020-06-22T02:00:00.000Z"
+}
 ```
